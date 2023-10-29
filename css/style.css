@@ -11,6 +11,19 @@ body{
 }
 
 /*------------HEADER------------*/
+.color-hover a:hover{
+    color: white;
+}
+
+.bg-icon{
+    background-color:gray;
+    
+}
+
+.nav-color{
+    color: rgb(15, 219, 219);
+}
+
 header{
     background-color:#040404;
     display: flex;

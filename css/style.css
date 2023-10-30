@@ -1,38 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Rubik', sans-serif;
 }
 
 /*------------HEADER------------*/
-.color-hover a:hover{
+.color-hover a:hover {
     color: white;
 }
 
-.bg-icon{
-    background-color:gray;
-    
+.bg-icon {
+    background-color: gray;
+
 }
 
-.nav-color{
+.nav-color {
     color: rgb(15, 219, 219);
 }
 
-header{
-    background-color:#040404;
+header {
+    background-color: #040404;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header ul{
-    font-size: 25px ;
+header ul {
+    font-size: 25px;
     list-style: none;
     display: flex;
 }
@@ -41,16 +41,17 @@ header nav ul li {
     margin: 20px;
 }
 
-header nav ul li a{
+header nav ul li a {
     color: rgb(15, 219, 219);
     text-decoration: none;
 }
 
-body{
+body {
     background-color: black;
 }
+
 /*------------MAIN INICIO------------*/
-.hero{
+.hero {
     text-align: center;
     width: 100%;
     height: 350px;
@@ -63,61 +64,78 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.hero h1{
+
+.hero h1 {
     font-size: 50px;
 }
-.hero h2{
+
+.hero h2 {
     font-size: 25px;
 }
+
 .bebidas {
-    color:white;
+    color: white;
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 15px 15px 15px 15px;
     margin: 10px 5px 10px 5px;
     border: solid 1px white;
     text-align: center;
 }
-.bebidas div{    
+
+.bebidas div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
 }
-.bebidas div h2{
+
+.bebidas div h2 {
     font-size: 25px;
 }
-.bebidas div p{
+
+.bebidas div p {
     font-size: 25px;
 }
-.bebidas div a{
+
+.bebidas div a {
     font-size: 20px;
     text-decoration: none;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
+
+.bebidas div a:hover {
+    color: grey;
+}
+
 .bebidas img {
     width: 250px;
     height: 250px;
     margin-left: 5px;
     border: solid 2px rgb(49, 48, 48);
 }
-.nosotros{
+
+.nosotros {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: solid 1px white;
     padding: 15px 15px 15px 15px;
-    margin: 10px 5px 10px 5px ;
+    margin: 10px 5px 10px 5px;
 }
-.nosotros h2{
+
+.nosotros h2 {
     font-size: 25px;
 }
-.nosotros p{
+
+.nosotros p {
     font-size: 25px;
     text-align: center;
 }
+
 .nosotros div img {
     width: 250px;
     height: 200px;
@@ -127,19 +145,22 @@ body{
 }
 
 /*------------MAIN NUESTRAS-BARRAS.HTML------------*/
-.barras{
+.barras {
     color: white;
 }
-.barras h2{
+
+.barras h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 10px;
 }
-.barras div h3{
+
+.barras div h3 {
     margin-left: 10px;
 }
-.barras div{
+
+.barras div {
     margin: 10px;
     padding: 10px 0 10px 10px;
     border: solid 1px white;
@@ -148,54 +169,140 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.barras div img{
+
+.barras div img {
     width: 250px;
     height: 250px;
     border: solid 2px rgb(49, 48, 48);
-    margin-right: 10px ;
+    margin-right: 10px;
 }
 
 /*---Cervezas-html-----*/
-.cervezas{
+.cervezas {
     color: white;
 }
 
 /*---Nosotros.html----*/
-.conocenos{
-    color:white;
+.conocenos {
+    color: white;
 }
 
-.conocenos div img{
+.conocenos div img {
     width: 250px;
     height: 200px;
 }
 
 /*--Contacto--*/
-.contactanos{
+.contactanos {
     color: white;
 }
-.fixed{
-    position: fixed;
-    bottom: 25px;
-    right: 50px;
-}
+
+
 /*------------FOOTER------------*/
-footer{
+footer {
     color: white;
-    background-color:#040404;
+    background-color: #040404;
 }
-footer div{
+
+footer div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-footer div a img{
+
+footer div a img {
     margin: 10px;
 }
-footer h4{
+
+footer h4 {
     font-size: 15px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-bottom: 10px;
+}
+
+
+/*-------------MEDIA QUERY------------*/
+/*-----Index-----*/
+@media screen and (max-width:1030px){
+    .bebidas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .img-bebidas{
+        margin: 10px 0 10px 0px ;
+    }
+}
+
+    @media screen and (max-width:815px) {
+    .nosotros div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    } 
+
+    @media screen and (max-width:540px) {
+        .bebidas img {
+            width: 200px;
+            height: 200px;
+        }
+        .nosotros div img {
+            width: 200px;
+            height: 150px;
+        }
+    }
+/*-----Nuestras barras-----*/
+@media screen and (max-width:680px) {
+    .barras div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer div h3 {
+        font-size: 15px;
+    }
+
+    footer div a img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (max-width:469px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

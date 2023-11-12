@@ -47,7 +47,7 @@ header nav ul li a {
 }
 
 body {
-    background-color: black;
+    background-color: #040404;
 }
 
 /*------------MAIN INICIO------------*/
@@ -77,11 +77,12 @@ body {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px 15px 15px 15px;
     margin: 10px 5px 10px 5px;
     border: solid 1px white;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .bebidas div {
@@ -92,7 +93,8 @@ body {
 }
 
 .bebidas div h2 {
-    font-size: 25px;
+    font-size: 35px;
+    color: rgb(15, 219, 219);
 }
 
 .bebidas div p {
@@ -108,6 +110,7 @@ body {
 
 .bebidas div a:hover {
     color: grey;
+    font-size: 25px;
 }
 
 .bebidas img {
@@ -128,7 +131,8 @@ body {
 }
 
 .nosotros h2 {
-    font-size: 25px;
+    font-size: 35px;
+    color: rgb(15, 219, 219);
 }
 
 .nosotros p {
@@ -180,11 +184,57 @@ body {
 /*---Cervezas-html-----*/
 .cervezas {
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 10px 0 10px;
+}
+
+.cervezas h2{
+    color: rgb(15, 219, 219);
+    margin: 0px 0px 20px 0px;
+    font-size: 40px;
+}
+
+.cervezas h3{
+    font-size: 25px;
+}
+.cervezas p{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+.cervezas div{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 0 10px 10px;
+    border: solid 1px white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+.cervezas div h3{
+    color: rgb(15, 219, 219);
+}
+
+.cervezas div img{
+    width: 300px;
+    height: 350px;
+    border:solid 2px rgb(49, 48, 48); ;
+    margin-right: 15px ;
 }
 
 /*---Nosotros.html----*/
+
 .conocenos {
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .conocenos div img {
@@ -195,6 +245,13 @@ body {
 /*--Contacto--*/
 .contactanos {
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactanos iframe{
+    width: 100%;
 }
 
 
@@ -305,4 +362,29 @@ footer h4 {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/*-----CERVEZAS-----*/
+@media screen and (max-width:839px){
+    .cervezas div{
+        display: flex;
+        flex-direction:column;
+
+    }
+    
+}
+
+@media screen and (max-width:424px) {
+    .cervezas p{
+        font-size: 18px;
+    }
+}
+
+/*-----NOSOTROS-----*/
+@media screen and (max-width:528px) {
+    .conocenos{
+        display: flex;
+        align-items: center;
+    }
+    
 }

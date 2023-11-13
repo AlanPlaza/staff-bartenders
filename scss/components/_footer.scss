@@ -1,0 +1,21 @@
+footer{
+    color: white;
+    background-color: #040404;
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        a{
+            img{
+                margin: 10px;
+            }
+        }
+    }
+    h4{
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+}

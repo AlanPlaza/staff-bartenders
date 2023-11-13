@@ -1,2 +1,268 @@
-h1 {
-  color: black; }
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #040404; }
+
+.color-hover a:hover {
+  color: white; }
+
+.bg-icon {
+  background-color: gray; }
+
+.nav-color {
+  color: #0fdbdb; }
+
+/*----MAIN INDEX.HTML----*/
+.hero {
+  text-align: center;
+  width: 100%;
+  height: 350px;
+  color: #0fdbdb;
+  background-image: url(../img/fondohero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .hero h1 {
+    font-size: 50px; }
+  .hero h2 {
+    font-size: 25px; }
+
+.bebidas {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px 15px 15px 15px;
+  margin: 10px 5px 10px 5px;
+  border: solid 1px white;
+  text-align: center;
+  flex-wrap: wrap; }
+  .bebidas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    .bebidas div h2 {
+      font-size: 35px;
+      color: #0fdbdb; }
+    .bebidas div p {
+      font-size: 25px; }
+    .bebidas div a {
+      font-size: 20px;
+      text-decoration: none;
+      background-color: black;
+      color: white; }
+      .bebidas div a:hover {
+        color: grey;
+        font-size: 25px; }
+  .bebidas img {
+    width: 250px;
+    height: 250px;
+    margin-left: 5px;
+    border: solid 2px #313030; }
+
+.nosotros {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px white;
+  padding: 15px 15px 15px 15px;
+  margin: 10px 5px 10px 5px; }
+  .nosotros h2 {
+    font-size: 35px;
+    color: #0fdbdb; }
+  .nosotros p {
+    font-size: 25px;
+    text-align: center; }
+  .nosotros div img {
+    width: 250px;
+    height: 200px;
+    margin-left: 5px;
+    border: solid 2px #313030;
+    margin-top: 10px; }
+
+/*----NUESTRAS BARRAS.HTML----*/
+.barras {
+  color: white; }
+  .barras h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px; }
+  .barras div {
+    margin: 10px;
+    padding: 10px 0 10px 10px;
+    border: solid 1px white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .barras div h3 {
+      margin-left: 10px; }
+  .barras img {
+    width: 250px;
+    height: 250px;
+    border: solid 2px #313030;
+    margin-right: 10px; }
+
+/*----CERVEZAS.HTML----*/
+.cervezas {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 10px 0 10px; }
+  .cervezas h2 {
+    color: #0fdbdb;
+    margin: 0px 0px 20px 0px;
+    font-size: 40px; }
+  .cervezas h3 {
+    font-size: 25px; }
+  .cervezas p {
+    font-size: 20px;
+    margin: 0px 0px 0px 0px; }
+  .cervezas div {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 0 10px 10px;
+    border: solid 1px white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%; }
+    .cervezas div h3 {
+      color: #0fdbdb; }
+    .cervezas div img {
+      width: 300px;
+      height: 350px;
+      border: solid 2px #313030;
+      margin-right: 15px; }
+
+/*----NOSOTROS.HTML----*/
+.conocenos {
+  color: white;
+  display: flex;
+  flex-direction: column; }
+  .conocenos div img {
+    width: 250px;
+    height: 200px; }
+
+/*----CONTACTO.HTML----*/
+.contactanos {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contactanos h2 {
+    color: #0fdbdb; }
+  .contactanos p {
+    font-size: 20px;
+    text-align: center; }
+  .contactanos h3 {
+    color: #0fdbdb; }
+  .contactanos iframe {
+    width: 100%; }
+
+footer {
+  color: white;
+  background-color: #040404; }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    footer div a img {
+      margin: 10px; }
+  footer h4 {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px; }
+
+/*-------------MEDIA QUERY------------*/
+/*----INDEX.HTML----*/
+@media screen and (max-width: 1030px) {
+  .bebidas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+    .bebidas img {
+      margin: 10px 0 10px 0px; } }
+
+@media screen and (max-width: 815px) {
+  .nosotros div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 540px) {
+  .bebidas img {
+    width: 200px;
+    height: 200px; }
+  .nosotros div img {
+    width: 200px;
+    height: 150px; } }
+
+/*----- HERO & FOOTER -----*/
+@media screen and (max-width: 469px) {
+  .hero h1 {
+    font-size: 40px; }
+  .hero h2 {
+    font-size: 25px; }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 376px) {
+  .hero h1 {
+    font-size: 35px; }
+  .hero h2 {
+    font-size: 20px; }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+/*-----NUESTRAS BARRAS.HTML-----*/
+@media screen and (max-width: 680px) {
+  .barras div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  footer div a img {
+    width: 32px;
+    height: 32px; }
+  footer div h3 {
+    font-size: 15px; } }
+
+/*-----CERVEZAS.HTML-----*/
+@media screen and (max-width: 839px) {
+  .cervezas div {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 424px) {
+  .cervezas p {
+    font-size: 18px; } }
+
+/*-----NOSOTROS-----*/
+@media screen and (max-width: 528px) {
+  .conocenos {
+    display: flex;
+    align-items: center; } }

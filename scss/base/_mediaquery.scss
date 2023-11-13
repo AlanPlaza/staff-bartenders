@@ -1,0 +1,129 @@
+/*-------------MEDIA QUERY------------*/
+/*----INDEX.HTML----*/
+@media screen and (max-width:1030px) {
+    .bebidas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        img {
+            margin: 10px 0 10px 0px;
+        }
+    }
+}
+
+@media screen and (max-width:815px) {
+    .nosotros {
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width:540px){
+    .bebidas{
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .nosotros{
+        div{
+            img{
+                width: 200px;
+                height: 150px;
+            }
+        }
+    }
+}
+/*----- HERO & FOOTER -----*/
+@media screen and (max-width:469px){
+    .hero{
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 25px;
+        }
+    }
+    footer{
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width:376px){
+    .hero{
+        h1{
+            font-size: 35px;
+        }
+        h2{
+            font-size: 20px;
+        }
+    }
+    footer{
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+/*-----NUESTRAS BARRAS.HTML-----*/
+@media screen and (max-width:680px){
+    .barras{
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    footer{
+        div{
+            a{
+                img{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            h3{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+/*-----CERVEZAS.HTML-----*/
+@media screen and (max-width:839px){
+    .cervezas{
+        div{
+            display: flex;
+            flex-direction:column;
+        }
+    }
+}
+
+@media screen and (max-width:424px){
+    .cervezas{
+        p{
+            font-size: 18px;
+        }
+    }
+}
+
+/*-----NOSOTROS-----*/
+@media screen and (max-width:528px){
+    .conocenos{
+        display: flex;
+        align-items: center;
+    }
+}

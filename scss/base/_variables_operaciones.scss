@@ -3,3 +3,27 @@ $color-primario:#040404;
 $color-secundario: rgb(15, 219, 219);
 $color-texto:white;
 $color-border:rgb(49, 48, 48);;
+
+/*------LISTAS------*/
+$size:
+50px,
+40px,
+35px,
+25px,
+20px,
+15px;
+
+/*------EXTEND------*/
+%flex{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+/*------MIXINS------*/
+@mixin flex ($flex, $flex-dir, $justify, $align){
+    display: $flex;
+    flex-direction: $flex-dir;
+    justify-content: $justify;
+    align-items: $align;
+}

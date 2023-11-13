@@ -33,7 +33,7 @@ header {
     font-size: 40px;
 }
 
-header ul {
+header nav ul {
     font-size: 25px;
     list-style: none;
     display: flex;

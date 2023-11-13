@@ -8,11 +8,11 @@
 
 body {
     font-family: 'Rubik', sans-serif;
-    background-color: #040404;
+    background-color: $color-primario;
 }
 
 .color-hover a:hover {
-    color: white;
+    color: $color-texto;
 }
 
 .bg-icon {
@@ -21,5 +21,5 @@ body {
 }
 
 .nav-color {
-    color: rgb(15, 219, 219);
+    color: $color-secundario;
 }

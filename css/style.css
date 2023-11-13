@@ -186,27 +186,28 @@ header nav ul li a {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 10px 0 10px;
 }
 
-.cervezas h2{
+.cervezas h2 {
     color: rgb(15, 219, 219);
     margin: 0px 0px 20px 0px;
     font-size: 40px;
 }
 
-.cervezas h3{
+.cervezas h3 {
     font-size: 25px;
 }
-.cervezas p{
+
+.cervezas p {
     font-size: 20px;
     margin: 0px 0px 0px 0px;
 }
 
-.cervezas div{
+.cervezas div {
     margin: 10px 10px 10px 10px;
     padding: 10px 0 10px 10px;
     border: solid 1px white;
@@ -218,15 +219,16 @@ header nav ul li a {
     width: 95%;
 }
 
-.cervezas div h3{
+.cervezas div h3 {
     color: rgb(15, 219, 219);
 }
 
-.cervezas div img{
+.cervezas div img {
     width: 300px;
     height: 350px;
-    border:solid 2px rgb(49, 48, 48); ;
-    margin-right: 15px ;
+    border: solid 2px rgb(49, 48, 48);
+    ;
+    margin-right: 15px;
 }
 
 /*---Nosotros.html----*/
@@ -249,19 +251,21 @@ header nav ul li a {
     flex-direction: column;
     align-items: center;
 }
-.contactanos h2{
+
+.contactanos h2 {
     color: rgb(15, 219, 219);
 }
 
-.contactanos p{
+.contactanos p {
     font-size: 20px;
     text-align: center;
 }
-.contactanos h3{
+
+.contactanos h3 {
     color: rgb(15, 219, 219);
 }
 
-.contactanos iframe{
+.contactanos iframe {
     width: 100%;
 }
 
@@ -293,7 +297,7 @@ footer h4 {
 
 /*-------------MEDIA QUERY------------*/
 /*-----Index-----*/
-@media screen and (max-width:1030px){
+@media screen and (max-width:1030px) {
     .bebidas {
         display: flex;
         flex-direction: column;
@@ -301,29 +305,32 @@ footer h4 {
         text-align: center;
         align-items: center;
     }
-    .bebidas img{
-        margin: 10px 0 10px 0px ;
+
+    .bebidas img {
+        margin: 10px 0 10px 0px;
     }
 }
 
-    @media screen and (max-width:815px) {
-    .nosotros div{
+@media screen and (max-width:815px) {
+    .nosotros div {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    } 
+}
 
-    @media screen and (max-width:540px) {
-        .bebidas img {
-            width: 200px;
-            height: 200px;
-        }
-        .nosotros div img {
-            width: 200px;
-            height: 150px;
-        }
+@media screen and (max-width:540px) {
+    .bebidas img {
+        width: 200px;
+        height: 200px;
     }
+
+    .nosotros div img {
+        width: 200px;
+        height: 150px;
+    }
+}
+
 /*-----Nuestras barras-----*/
 @media screen and (max-width:680px) {
     .barras div {
@@ -376,24 +383,24 @@ footer h4 {
 }
 
 /*-----CERVEZAS-----*/
-@media screen and (max-width:839px){
-    .cervezas div{
+@media screen and (max-width:839px) {
+    .cervezas div {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width:424px) {
-    .cervezas p{
+    .cervezas p {
         font-size: 18px;
     }
 }
 
 /*-----NOSOTROS-----*/
 @media screen and (max-width:528px) {
-    .conocenos{
+    .conocenos {
         display: flex;
         align-items: center;
     }
-    
+
 }

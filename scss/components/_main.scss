@@ -151,10 +151,14 @@
     color: $color-texto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     div{
         img{
             width: 250px;
             height: 200px;
+            object-fit: contain;
         }
         dl{
             font-size: nth($size, 5);

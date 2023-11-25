@@ -162,10 +162,14 @@ header {
 .conocenos {
   color: white;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
   .conocenos div img {
     width: 250px;
-    height: 200px; }
+    height: 200px;
+    object-fit: contain; }
   .conocenos div dl {
     font-size: 20px; }
 

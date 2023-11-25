@@ -97,7 +97,8 @@ header {
     height: 200px;
     margin-left: 5px;
     border: solid 2px #313030;
-    margin-top: 10px; }
+    margin-top: 10px;
+    object-fit: contain; }
 
 /*----NUESTRAS BARRAS.HTML----*/
 .barras {
